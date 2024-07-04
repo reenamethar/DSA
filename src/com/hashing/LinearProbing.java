@@ -8,6 +8,10 @@ public class LinearProbing {
 
 Note :-  If there's no more space to insert a new element, just drop that element. */
 
+	//Ways to avoid collision in Open Addressing(all elements stored in the hash table itself,  no use of linkedlist as in case of separate chaining)
+		// 1. linear probing
+		// 2. quadratic probing
+		// 3. double hashing
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int Array[] = {4,14,24,44};
