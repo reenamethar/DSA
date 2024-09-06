@@ -1,6 +1,8 @@
 package com.stack;
 
 public class UsingLinkedList {
+	// time complexity -> O(1), for all push(), pop(), and peek()
+	// auxiliary space-> O(N)
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -9,6 +11,7 @@ public class UsingLinkedList {
 		stack.push(5);
 		stack.push(9);
 		stack.push(12);
+		System.out.println(stack.size);
 		stack.print();
 		System.out.println(stack.peek());
 		System.out.println(stack.pop());
@@ -17,6 +20,7 @@ public class UsingLinkedList {
 		stack.pop();
 		stack.pop();
 		stack.pop();
+		System.out.println(stack.size);
 		System.out.println(stack.isEmpty());
 		
 
