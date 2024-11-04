@@ -29,6 +29,7 @@ class QueueClass{
 		size=0;
 	}
 	void enqueue(int x) {
+		// by making enqueue operation costly
 		while(!st1.isEmpty()) {
 			st2.push(st1.peek());
 			st1.pop();
@@ -45,6 +46,14 @@ class QueueClass{
 		size--;
 		return st1.pop();
 	}
+	// making dequeue operation costly
+	/*
+	 * int dequeue() { if(st1.isEmpty() && st2.isEmpty()) { return -1; }
+	 * if(st2.isEmpty()) { while(!st1.isEmpty()) { st2.push(st1.peek()); st1.pop();
+	 * } } int poppedElement = st2.pop(); size--; return poppedElement; }
+	 * 
+	 * void enqueue(int x) { st1.push(x); size++; }
+	 */
 	int peek() {
 		return st1.peek();
 	}
