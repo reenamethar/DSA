@@ -11,6 +11,7 @@ public class CircularTourEfficient {
 	}
 	
 	public static int getFirstCircularTour(int []petrol, int[] dest, int n) {
+		// Instead of building a separate queue, we can use the array itself as a queue with the help of start and end pointers.
 		int start=0;
 		int curr_petrol =0;
 		int prev_petrol =0;
