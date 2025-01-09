@@ -87,21 +87,5 @@ class Queue{
 	}
 	int size() {
 		return size;
-	}
-	
-	
-	
+	}	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
